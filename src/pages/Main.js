@@ -15,7 +15,7 @@ const Main = () => {
   const categoriesList = useSelector((store) => store.videos.categoriesArr);
   useEffect(() => {
     dispatch(getCategories());
-  }, []);
+  }, [dispatch]);
   return (
     <>
       <div className="  text-center m-0 p-0  ">
