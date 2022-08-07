@@ -12,7 +12,7 @@ const Explore = () => {
   const videos = useSelector((store) => store.videos.videosArr);
   useEffect(() => {
     dispatch(getVideos());
-  }, []);
+  }, [dispatch]);
 
   const dummyText = useSelector((store) => store.videos.dummyText);
 
